@@ -1,6 +1,6 @@
-setwd("~/Documents/people/sajeewa amaradasa/sublethal paper/sublethalstressmanuscript")
+#setwd("~/Documents/people/sajeewa amaradasa/sublethal paper/sublethalstressmanuscript")
 #EC50 <- read.csv("~/Documents/people/sajeewa amaradasa/sublethal paper/sublethalstressmanuscript/EC50.csv")
-EC2 <- read.csv("~/Documents/people/sajeewa amaradasa/sublethal paper/sublethalstressmanuscript/EC50V2.csv")
+EC2 <- read.csv("EC50V2.csv")
 
 dotchart(EC2$Fold_Exp1[as.logical(match(EC2$Fungicide, "Boscalid", nomatch = F))], labels=EC2$IsolateID[as.logical(match(EC2$Fungicide, "Boscalid"))])
 bos_1 <- EC2$Fold_Exp1[as.logical(match(EC2$Fungicide, "Boscalid", nomatch = F))]
